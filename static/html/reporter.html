@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+<!-- main content -->
+{% block content %}
+
+    <!-- pdf cover
+
+        show information about the company and site
+    -->
+
+    <!-- add the long logo -->
+    <div class="report-logo">
+        <img src={{ "image:img/report_logo.png" | debug_image }}>
+    </div>
+
+    <!-- first cover -->
+    <h1 class="report-title">{{ title }}报告</h1>
+
+    <div class="report-info">
+        提交日期：{{ now| time2format("%Y-%m-%d") }}&nbsp;&nbsp;&nbsp;&nbsp;密级：内部资料
+    </div>
+
+    <table class="report_info comment">
+        <tbody>
+        <tr>
+            <td style="width: 50%;padding-right: 10pt;padding-top: 20pt;padding-bottom: 10pt;font-size: 12pt;"
+                class="bold">
+                &#9632;&nbsp;注意事项
+            </td>
+            <td style="width: 50%;padding-left: 10pt;padding-top: 20pt;padding-bottom: 10pt;font-size: 12pt;"
+                class="bold">
+                &#9632;&nbsp;联系我们
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right: 10pt;vertical-align: top;word-break: break-all;">
+                适用性：此报告是监测和诊断的评估结果，不保证适用于提交后的时期。<br>
+                数据有效期：此报告中涉及的数据和文件，时代华纳将在提交后存档3个月备查。<br>
+                保密声明：由于此报告包含有关安全细节，请小心处理，避免遗失。<br>
+                商标信息：时代华纳、ALAXI，是时代华纳的商标。<br>
+                版权声明：本文中出现的任何文字叙述、文档格式、插图、照片、方法、过程等内容，除另有特别注明，版权均属时代华纳所有，并受到有关产权及版权法保护。任何个人、机构未经时代华纳的书面授权许可，不得以任何方式复制或引用本文的任何片断。
+            </td>
+            <td style="padding-left: 10pt;vertical-align: top;word-break: break-all;">
+                感谢您选择时代华纳云安全服务，如您对本次监测内容有任何意见或建议，请及时反馈给绿盟安全专家团队，具体联系方式如下：<br/>
+                绿盟安全专家团队<br/>
+                北京运营中心地址：北京市海淀区车道沟一号院青东商务区A座10层(邮编：100089)<br>
+                成都运营中心地址：成都市高新区科园二路10号航利中心2栋2单元14楼(邮编：610041)<br>
+                安全专家团队7*24小时客户支持热线：400-818-6868转2 <br>
+                邮箱：rs@nsfocus.com<br>
+                网址：http://cloud.nsfocus.com
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="report-info-logo">
+        <img src={{ "image:img/logo_large.png" | debug_image }}>
+    </div>
+    <!-- <div style="float: right;">&copy; {{now|time2format("%Y")}} 时代华纳</div> -->
+
+    <!-- show next page -->
+    <div class="page-breaker" clear="all"></div>
+    <br clear=all style="mso-special-character:line-break;page-break-before:always">
+
+{% endblock %}

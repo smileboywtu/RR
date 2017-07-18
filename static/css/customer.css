@@ -1,0 +1,418 @@
+@charset "UTF-8";
+body, button, input, select, textarea, pre {
+  font-family: "微软雅黑", "Arial", "宋体";
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  font-size: 10.5pt; }
+
+body {
+  margin: 0; }
+
+span {
+  font-family: "微软雅黑", "Arial", "宋体";
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  font-size: 9pt; }
+
+p, li, div {
+  font-size: 10.5pt; }
+
+p {
+  text-indent: 2em;
+  line-height: 150%; }
+
+div.indent {
+  text-indent: 0;
+  padding: 0 0 0 2em; }
+
+img {
+  max-width: 100%; }
+
+.titlewrapper {
+  text-align: center; }
+
+.title {
+  font-size: 36pt;
+  text-indent: 0;
+  line-height: 100%;
+  margin-top: 4cm; }
+
+.subtitle {
+  font-size: 22pt;
+  text-indent: 0;
+  line-height: 100%;
+  text-align: right;
+  margin-top: -0.5cm;
+  margin-bottom: 3cm;
+  margin-right: 1cm; }
+
+.comment {
+  font-size: 10.5pt; }
+
+.info {
+  float: right;
+  font-size: 12pt;
+  line-height: 150%;
+  margin-bottom: 10pt; }
+
+.bold {
+  font-weight: bold; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.top {
+  vertical-align: top; }
+
+h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 8px 0; }
+
+h1.bottom {
+  width: 100%;
+  border-bottom: solid #c2d69b 0.15cm;
+  border-color: #000; }
+
+h2 {
+  font-size: 22pt;
+  font-weight: bold;
+  margin: 15px 0; }
+
+h3 {
+  font-size: 16pt;
+  font-weight: 600;
+  margin: 15px 0; }
+
+h4 {
+  font-size: 15pt;
+  font-weight: 600;
+  margin: 15px 0; }
+
+h5 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 15px 0; }
+
+h6 {
+  font-size: 12pt;
+  font-weight: 600;
+  margin: 15px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "微软雅黑", "Arial", "宋体"; }
+
+.logo-wide {
+  background-color: black;
+  height: 1.3cm;
+  line-height: 1.3cm; }
+
+.title_bak {
+  background-color: #eff4e9 !important; }
+
+.font_bold {
+  font-weight: bold !important; }
+
+.no_border, .no_border tbody, .no_border th, .no_border td, .no_border tr {
+  border: none !important; }
+
+.title_bak1 {
+  background-color: #eee !important; }
+
+.title2 {
+  border: 0 !important;
+  border-top: 1px solid #000 !important; }
+
+.title3 {
+  vertical-align: top !important;
+  color: #6fba2c !important;
+  font-weight: bold !important; }
+
+table.report_table {
+  table-layout: fixed;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: #dbdbdb;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5px 0 24px;
+  word-break: break-all;
+  clear: both;
+  invert: 100%; }
+
+table.table_layout_auto {
+  table-layout: auto;
+  width: 100%; }
+
+/* set up table */
+.table_title {
+  font-weight: bold !important;
+  text-align: center !important; }
+
+table.report_table th, table.report_table td {
+  border-style: solid solid solid none;
+  border-width: 1px;
+  border-color: #dbdbdb;
+  padding: 3px;
+  margin: 0;
+  line-height: 24px;
+  /*overflow: hidden;*/
+  text-align: left;
+  padding-left: 0.25cm; }
+
+table.report_table th.last, table.report_table td.last {
+  border-right: none; }
+
+table.report_table th.longtext, table.report_table td.longtext {
+  height: 0.5cm !important;
+  line-height: 12pt !important; }
+
+table.report_table th {
+  font-size: 10.5pt;
+  font-weight: 600;
+  background: #eff4e9;
+  height: 0.3cm;
+  line-height: 0.65cm; }
+
+table.report_table td {
+  font-size: 10pt;
+  min-height: 9pt; }
+
+table.report_table th.center, table.report_table td.center {
+  text-align: center; }
+
+/*居中对齐*/
+table.report_table th.left, table.report_table td.left {
+  text-align: left;
+  vertical-align: top; }
+
+table.report_table tfoot tr th {
+  border-top: solid 1px #ddd;
+  font-weight: bold; }
+
+table.report_table td {
+  padding-left: 10pt; }
+
+table.report_table .extend {
+  padding-top: 1px;
+  padding-bottom: 1px; }
+
+table.report_table .extend table.report_table {
+  margin: 0; }
+
+table.report_table .extend th {
+  background: none; }
+
+table.report_info {
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-left-width: 0px;
+  width: 100%; }
+
+table.summary_table {
+  width: 100%;
+  clear: both;
+  invert: 100%;
+  margin: 10px 0 24px;
+  table-layout: fixed; }
+
+table.summary_table td {
+  border-bottom: 2px dashed #f2f2f2;
+  line-height: 25px; }
+
+.th-color {
+  background: #EFF4E9 !important; }
+
+.no-border {
+  border: none !important; }
+
+.no-border-top {
+  border-top: none !important; }
+
+.no-border-bottom {
+  border-bottom: none !important; }
+
+.no-border-left {
+  border-left: none !important; }
+
+.no-border-right {
+  border-right: none !important; }
+
+.top-border-double {
+  border-top: double #dbdbdb !important; }
+
+.bottom-border-double {
+  border-bottom: double #dbdbdb !important; }
+
+.bottom-border {
+  border-bottom: solid #dbdbdb 0.5pt !important; }
+
+.top-border {
+  border-top: solid #dbdbdb 0.5pt !important; }
+
+.right-border {
+  border-right: solid #dbdbdb 0.5pt !important; }
+
+.tiny-height-cell {
+  padding: initial !important;
+  padding-left: 5px !important;
+  line-height: 10pt !important; }
+
+.tiny-height-th {
+  line-height: 10pt !important;
+  vertical-align: bottom; }
+
+.tiny-width-th {
+  width: 63pt;
+  padding-left: 0.25cm;
+  padding-right: 0.25cm; }
+
+span.alert {
+  font-weight: bold;
+  color: red; }
+
+span.large {
+  font-size: 10.5pt; }
+
+div.summary_desc {
+  margin-top: 6pt;
+  font-size: 11pt;
+  color: #393939;
+  letter-spacing: 1.5px;
+  line-height: 30pt; }
+
+/* set up page break */
+.page-breaker {
+  display: block;
+  page-break-before: always;
+  mso-special-character: line-break; }
+
+.report-logo {
+  background-color: #000;
+  padding: 0.4cm 0.55cm; }
+
+.report-logo > img {
+  display: block;
+  height: 0.6cm; }
+
+.report-title {
+  text-align: center;
+  font-size: 36pt;
+  font-weight: normal;
+  text-indent: 0;
+  line-height: 100%;
+  margin: 3.5cm 0; }
+
+.report-info {
+  text-align: right;
+  font-size: 12pt;
+  line-height: 150%;
+  margin-bottom: 10pt; }
+
+.report-info-logo {
+  text-align: right; }
+
+.chart-total-score {
+  position: relative;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 5px 0 15px 0; }
+
+.chart-total-score > img {
+  text-align: center;
+  display: block;
+  height: 125px;
+  margin: 0 auto; }
+
+.chart-total-score > span.score {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0; }
+
+.chart-total-score > p {
+  margin: 2px 0 0 0; }
+
+.chart-total-score > p > span {
+  font-weight: 700;
+  font-size: 16px; }
+
+.chart-total-score-table {
+  margin: 0 0 20px 0 !important; }
+
+.chart-total-score-table > table {
+  width: 100%; }
+
+.chart-total-score-table tbody th, .chart-total-score-table tbody td {
+  padding: 5px 0;
+  border-bottom: 2px dotted #f2f2f2; }
+
+.chart-total-score-table tbody th {
+  text-align: right;
+  width: 130px;
+  font-weight: normal; }
+
+.chart-total-score-table tbody td {
+  padding-left: 3em; }
+
+.summary-table > table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.summary-table tbody th, .summary-table tbody td, .summary-table thead th {
+  border: solid #888;
+  border-width: 0 1px 1px 0;
+  text-align: left;
+  padding: 5px 10px; }
+
+.summary-table thead th, .summary-table tbody th {
+  background-color: #eff4e9; }
+
+.summary-table .break-td, .summary-table .break-td {
+  width: 120px;
+  word-break: break-all;
+  white-space: normal;
+  min-width: 0; }
+
+.chart-click-summary {
+  display: block;
+  margin: 0 auto; }
+
+.chart-click-summary-table tbody td {
+  padding: 5px 15px; }
+
+/*
+  设置页眉和页脚
+*/
+@page {
+  size: A4;
+  margin: 3cm 2cm;
+  font-family: "微软雅黑", "Arial", "宋体";
+  border-bottom: 2px solid #cecece;
+  @top-left {
+    font-size: 10.5pt;
+    content: "时代华纳服务报表";
+    margin-bottom: -1.7cm; }
+  @top-right {
+    font-size: 10.5pt;
+    content: "第 " counter(page) " 页";
+    margin-bottom: -1.7cm; }
+  @bottom-right {
+    font-size: 12pt;
+    content: "©2017 时代华纳";
+    margin-top: -1.7cm; } }
+
+/*# sourceMappingURL=customer.css.map */

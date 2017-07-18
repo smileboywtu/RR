@@ -1,0 +1,20 @@
+# config locale file directory
+# and set default to CN
+default_locale: [zh_Hans_CN]
+
+# set celery broker url
+broker_url: 
+
+
+# set for s3 storage information
+# you need to use same bucket across worker
+s3: {
+    host:
+    bucket: 
+    access_key:
+    access_secret:
+}
+
+
+
+

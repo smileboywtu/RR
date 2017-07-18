@@ -1,0 +1,28 @@
+
+python reporter with wp
+~~~~~~~~~~~~~~~~~~~~~~~
+
+~ how
+  inherit the worker class and implement function needed
+
+~ babel
+  - current babel config for `python` source file and `html` files
+  - if you need to translate other source type file just add it to mapping
+    file `babel.cfg`
+  - when you need to translate the text into locale `xx`, you need to wrap
+    the text with `_("some text message")`
+  - after that, just run pybabel extract, pybabel update, then modify the `.po`
+    file to translate the message, finally run pybabel compile to get binary file.
+
+~ install app system
+
+  for ubuntu 14.04:
+  `sudo apt-get install python-dev python-pip python-lxml python-cffi libcairo2 libpango1.0-0 libgdk-pixbuf2.0-0 shared-mime-info`
+
+  for ubuntu 12.04:
+  `sudo apt-get install python-dev python-pip python-lxml libcairo2 libpango1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info`
+
+  pip install -r requirements.txt
+
+~ TODO
+  celery integrity
